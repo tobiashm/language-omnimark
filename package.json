@@ -1,0 +1,14 @@
+{
+  "name": "language-omnimark",
+  "version": "0.1.0",
+  "description": "Adds syntax highlighting to OmniMark files in Atom.",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/tobiashm/language-omnimark",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

@@ -1,0 +1,159 @@
+# http://developers.stilo.com/docs/html/grammar/index.html
+"scopeName": "source.omnimark"
+"name": "OmniMark"
+"fileTypes": [
+  "xin"
+  "xom"
+]
+"patterns": [
+  {
+    "match": "^\\s*;.*$"
+    "name": "comment.line.omnimark"
+  }
+  {
+    "include": "#keywords"
+  }
+  {
+    "include": "#keywords-other"
+  }
+]
+"repository": {
+  "keywords": {
+    "patterns": [
+      "match": "\\b(do|done|else|scan|select|case|select-type|repeat)\\b"
+      "name": "keyword.block.omnimakr"
+    ]
+  }
+  "keywords-other": {
+    "patterns": [
+      {
+        "match": "\\b(abstract|activate|active|after|again|always|ancestor|and|another|any|any-content-model|any-text|append|arg|as|assert|attached)\\b"
+        "name": "keyword.other.a.omnimark"
+      }
+      {
+        "match": "\\b(attribute(s|-declaration)?)\\b"
+        "name": "keyword.other.attribute.omnimark"
+      }
+      {
+        "match": "\\b(attribute-declared-(cdata|conref|current|defaulted|entities|entity|fixed|group|id|idrefs?|implied|names?|nmtokens?|numbers?|nutokens?|required))\\b"
+        "name": "keyword.other.attribute-declared.omnimark"
+      }
+      {
+        "match": "\\b(base|before|binary(-(input|mode|output))?|blank|break-width|buffer(ed)?|by)\\b"
+        "name": "keyword.other.b.omnimark"
+      }
+      {
+        "match": "\\b(case|case-sensitive|cast|catch(able)?|cdata(-(content-model|entity))?|children|class|clear|closed?|code|collect-garbage|commpiled-date|complement|conref|constant|content(-(end|start))?|context-translate|conversion-function|copy|copy-clear|counter)\\b"
+        "name": "keyword.other.c.omnimark"
+      }
+      {
+        "match": "\\b(create(-(attribute-declaration|element-declaration|element-event|processing-instruction-event|(un)?specified-attribute)|ed|ing|or))\\b"
+        "name": "keyword.other.create.omnimark"
+      }
+      {
+        "match": "\\b(cross-translate|current)\\b"
+        "name": "keyword.other.c.omnimark"
+      }
+      {
+        "match": "\\b(data-(attributes?|content|letters)|date|deactivate|declaration|declare|decrement|default(-entity|ed|ing)?|define|delimiter|difference|digit|directory|discard|divide|do|doctype|document(-element|-end|-start)?|domain-(bound|free)|done|down-translate|drop|dtd(-end|-start|s)?|dynamic)\\b"
+        "name": "keyword.other.d.omnimark"
+      }
+      {
+        "match": "\\b(declared-(attribute|conref|current|defaulted|elements|empty|fixed|general-entities|implied|parameter-entities|required))\\b"
+        "name": "keyword.other.declared.omnimark"
+      }
+      {
+        "match": "\\b(element(-content-model|-declaration|s)?|else(where)?|empty(-content-model|-tag)?|entities|entity(-declaration)?|epilog-start|equal|escape|except|exists|exit|export|extends)\\b"
+        "name": "keyword.other.e.omnimark"
+      }
+      {
+        "match": "\\b(external(-(data-entity|entity|function|output-function|text-entity))?)\\b"
+        "name": "keyword.other.external.omnimark"
+      }
+      {
+        "match": "\\b(fail|false|field|find(-end|-start)?|flush|for|format|from|function(-library)?)\\b"
+        "name": "keyword.other.f.omnimark"
+      }
+      {
+        "match": "\\b(general|global|greater-(equal|than)|groups?)\\b"
+        "name": "keyword.other.g.omnimark"
+      }
+      {
+        "match": "\\b(halt(-everything)?|has(nt)?)\\b"
+        "name": "keyword.other.h.omnimark"
+      }
+      {
+        "match": "\\b(id(-checking)?|identity|idrefs?|ignore|implements|implied(-attribute)?|import|in(-library)?|include(-(end|guard|start))?|inclusion|increment|infix-function|initial(-size)?|input|insertion-break|instance|int32|integer|interface|internal|into|invalid-data|is(nt)?|item)\\b"
+        "name": "keyword.other.i.omnimark"
+      }
+      {
+        "match": "\\b(join)\\b"
+        "name": "keyword.other.j.omnimark"
+      }
+      {
+        "match": "\\b(key|keyed)\\b"
+        "name": "keyword.other.k.omnimark"
+      }
+      {
+        "match": "\\b(last|lastmost|lc|length|less-(equal|than)|letters?|library|line-(end|start)|literal|local|location|log-message|lookahead)\\b"
+        "name": "keyword.other.l.omnimark"
+      }
+      {
+        "match": "\\b(macro(-end)?|marked-section|markup|markup-(comment|error|event|identification|parser?)|mask|match(es)?|message|minus|mixed(-content-mode)?|modifiable|module|modulo)\\b"
+        "name": "keyword.other.m.omnimark"
+      }
+      {
+        "match": "\\b(markup-(cdata-marked-section|comment|element|error|(external|internal)-(data|text)-entity-reference|(ignore|include)-marked-section|point|processing-instruction|rcdata-marked-section|region|warning)-event)\\b"
+        "name": "keyword.other.markup-event.omnimark"
+      }
+      {
+        "match": "\\b(name|name-letters|namecase|named|names|ndata-entity|negate|nested-referents|new|newline|next|nmtokens?|no|no-default-io|non-(cdata|implied|sdata)|not|not-reached|notation|null|numbers?|number-of|numeric-literal|nutokens?)\\b"
+        "name": "keyword.other.n.omnimark"
+      }
+      {
+        "match": "\\b(occurrence|of|only|opaque|open|optional|or|output(-to)?|over|overloaded|overriding)\\b"
+        "name": "keyword.other.o.omnimark"
+      }
+      {
+        "match": "\\b(parameter|parent|past|pcdata|plus|prefixed|preparent|previous|process(-end|-start)?|processing-instruction|prolog-(end|in-error)|proper|public|put)\\b"
+        "name": "keyword.other.p.omnimark"
+      }
+      {
+        "match": "\\b(rcdata(-content-model)?|read-only|readable|record|referents?|referents-(allowed|displayed|not-allowed)|remainder|remove|reopen|repeat(ed)?|replacement-break|require|reset|rethrow|return|reversed)\\b"
+        "name": "keyword.other.r.omnimark"
+      }
+      {
+        "match": "\\b(save|save-clear|scan|sdata|sdata-entity|select|select-type|set|severity|shared|shift|signal|silent-referent|sink|size|skip|source|space|specified(-attribute)?|status|stream|string|subdoc-entity|subdocuments?|submit|succeed|supply|suppress|switch|symbol|system(-call)?)\\b"
+        "name": "keyword.other.s.omnimark"
+      }
+      {
+        "match": "\\b(sgml|sgml-(comment|declaration-end|dtd|dtds|error|in|out|parse|parser))\\b"
+        "name": "keyword.other.sgml.omnimark"
+      }
+      {
+        "match": "\\b(take|test-system|text|text-mode|this|thrown?|times|to|token|translate|true)\\b"
+        "name": "keyword.other.t.omnimark"
+      }
+      {
+        "match": "\\b(uc|ul|unanchored|unattached|unbuffered|union|unless|unprefix|up-translate|use|usemap|using|utf-8)\\b"
+        "name": "keyword.other.u.omnimark"
+      }
+      {
+        "match": "\\b(valued?|value-(end|start)|variable|void)\\b"
+        "name": "keyword.other.v.omnimark"
+      }
+      {
+        "match": "\\b(when|whitespace|with|word-(end|start)|writable|write-only)\\b"
+        "name": "keyword.other.w.omnimark"
+      }
+      {
+        "match": "\\b(xml|xml-dtd|xml-dtds|xml-parse|xmlns-change|xmlns-name)\\b"
+        "name": "keyword.other.x.omnimark"
+      }
+      {
+        "match": "\\b(yes)\\b"
+        "name": "keyword.other.y.omnimark"
+      }
+    ]
+  }
+}
